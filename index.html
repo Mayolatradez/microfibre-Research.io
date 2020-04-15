@@ -216,8 +216,8 @@
         .linkDirectionalParticleWidth(2)
         .linkColor(() => 'rgb(255, 255, 255)')
         .linkDirectionalParticleColor(() => 'rgb(255, 255, 255)')
-        .linkWidth(0.1)
-        .linkOpacity(0.4)
+        .linkWidth(0.5)
+        .linkOpacity(0.2)
         .onNodeDragEnd(node => {
           // add specific node info to the panel
           document.getElementById('panel_img').src = node.img;
@@ -242,7 +242,7 @@
           const sprite = new SpriteText(node.id);
           sprite.textfont = 'Roboto';
           sprite.color = 'white';
-          sprite.textheight = 12;
+          sprite.textheight = 20;
           
           obj.add(sprite);
           return obj;
